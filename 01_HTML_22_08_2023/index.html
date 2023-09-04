@@ -1,0 +1,114 @@
+<html lang="en">
+    <head>
+       
+        <style>
+            /* по имени тега */
+            h1 {
+                text-align: center;
+            }
+            /* по имени класса */
+            .bg-color {
+                background-color: azure;
+            }
+            /* по ID */
+          #header {
+            font-size: 25px;
+          }
+        </style>
+        <!-- 
+            ./   остаться в той же директории
+            ../    выйти во внешнюю директорию
+         -->
+        <link rel="stylesheet" href="./style.css">
+        <title>HTML (part 2)</title>
+    </head>
+    <body>
+        <!-- Принцип работы блочных и строчных элементов -->
+        <h1>
+            Hello world!
+            <h2>Hello again!</h2>
+        </h1>
+
+        <a href="http://www.google.com/">
+            Ссылка на Гугл
+            <div>
+                <a href="http://www.facebook.com/"> Ссылка на Фейсбук </a>
+            </div>
+        </a>
+
+        <!-- Блочный Элемент (div) -->
+        <!-- Строчный Элемент (span) -->
+        <div>
+            <p>This is a text from paragraph</p>
+            and span
+        </div>
+
+        <!-- Семантический подход -->
+
+        <!-- шапка сайта -->
+        <header>
+            <!-- Навигационный блок -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- основной контент -->
+        <main>
+            <section>
+                <h1>My First Blog Post</h1>
+                <p>Posted by John on August 22, 2023</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quas, odit.
+                </p>
+                <p><a href="/blog/1">Real more</a></p>
+            </section>
+
+            <section>
+                <h1>My Second Blog Post</h1>
+                <p>Posted by John on August 23, 2023</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quas, odit.
+                </p>
+                <p><a href="/blog/2">Real more</a></p>
+            </section>
+
+            <section class="bg-color color1">
+                <h1 id="header">My Third Blog Post</h1>
+                <p>Posted by John on August 24, 2023</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quas, odit.
+                </p>
+                <p><a href="/blog/3">Real more</a></p>
+            </section>
+        </main>
+        <!-- подвал сайта -->
+        <footer style="color: blue; font-size: 20px" class="bg-color">
+            <p>&copy; 2023 My Blog</p>
+        </footer>
+
+        <!-- CSS -->
+        <!-- Как можно настроить стилистику для элемента?
+            1. По имени тега = настройку получат все теги с данным названием;
+            2. По имени класса элемента = настройку получат все теги с данным классом;
+            3. По id элемента = настройку получат только тег с данным id;
+
+            где можно настроить стилистику элемента?
+            1. Inline стили (указывается в качестве значения атрибута style)
+            2. Internal стили (указывается в качестве контента теги style)
+            3. External стили (указывается в отдельном файле)
+         -->
+    </body>
+</html>

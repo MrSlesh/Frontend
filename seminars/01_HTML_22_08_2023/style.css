@@ -1,0 +1,8 @@
+ul {
+    /* отключение дефолтной стилистики */
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
