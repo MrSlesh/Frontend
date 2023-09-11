@@ -16,6 +16,9 @@ const bankAccount = {
         console.log(`Балансе вашего счета равен: ${this.balance}`)
     }
 }
+
+
+
 bankAccount.checkBalance();
 bankAccount.deposit(500);
 bankAccount.checkBalance();
